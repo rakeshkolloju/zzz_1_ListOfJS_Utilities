@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myctrl',function($scope)
+        {
+            //$scope.firstName = "Rakesh";
+           // $scope.lastName = "KOll";
+        }
+            );
+     
+    </script>
+</head>
+<body>
+   <div ng-app="myApp" ng-controller="myctrl" ng-init="person={firstName1:'Rakesh1',lastName1:'Kol1'}">
+       <input type="text" ng-model="firstName"/>
+       <input type="text" ng-model="lastName" />
+
+       <br />
+       Fullname {{firstName}}{{lastName}}
+       <span ng-bind="person.firstName1"> </span>
+
+   </div>
+    
+
+   
+</body>
+</html>
