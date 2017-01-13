@@ -165,6 +165,7 @@ BinaryUpload.Uploader = function () {
             // in case of error
             function (sender, args) {
                 logMessage(args.get_message(), state.ERROR);
+		    
             })
 
     }
